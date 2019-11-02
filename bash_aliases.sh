@@ -3,7 +3,7 @@
 export __LS_OPTIONS='--color=auto -h'
 
 alias ls='ls $__LS_OPTIONS'
-alias ll='ls $__LS_OPTIONS -l'
+alias ll='ls $__LS_OPTIONS -lah'
 alias la='ls $__LS_OPTIONS -la'
 alias l='ls $__LS_OPTIONS -CF'
 alias sl='ls $__LS_OPTIONS'

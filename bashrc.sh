@@ -116,6 +116,7 @@ fi
 #HOST_COLOR=${UGreen}
 
 FQDN=`hostname -f`
+MYHOSTNAME=`hostname`
 function __makeTerminalTitle() {
     local title=''
 
@@ -147,7 +148,7 @@ function __makePS1() {
         #HOST_COLOR="\e[4$((H%5 + 2))m" # background
     fi
 
-    PS1=''
+    PS1="\[${Green}\]\$MYHOSTNAME\[${Color_Off}\]:"
 
     PS1+="${debian_chroot:+($debian_chroot)}"
 
